@@ -1,7 +1,7 @@
 version: '3.83'
 services:
   fe-app:
-    image: fe-container:first
+    image: crpi-966g44lkhzc56vyh.cn-guangzhou.personal.cr.aliyuncs.com/liao_liao/liao:aaa
     ports:
       - 80:80
     depends_on:
