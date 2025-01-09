@@ -24,6 +24,8 @@ RUN npm config set registry https://registry.npmmirror.com/
 
 RUN npm install --production
 
+RUN npm run migration:run
+
 EXPOSE 3005
 
 CMD ["node", "/app/main.js"]
