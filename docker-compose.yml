@@ -22,7 +22,7 @@ services:
   mysql-container:
     image: mysql
     volumes:
-      - Users/leon/mysql-data:/var/lib/mysql
+      - /Users/leon/mysql-data:/var/lib/mysql
     ports:
       - 3306:3306
     environment:
@@ -33,7 +33,7 @@ services:
   redis-container:
     image: redis
     volumes:
-      - Users/leon/redis-data:/data
+      - /Users/leon/redis-data:/data
     ports:
       - 6379:6379
     networks:
